@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sub-heading {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .services {
+    display: none;
+    margin-top: 5px;
+  }
+  
+  .service {
+    margin-top: 5px;
+  }
+  
+  .show {
+    display: block;
+  }
