@@ -14,11 +14,11 @@ body {
     font-family: Poppins;
     background: #cebca6;
 } */
-@media screen and (max-height: 500px) { body > * { scale: 0.8 };}
+/* @media screen and (max-height: 500px) { body > * { scale: 0.8 };}
 @media screen and (max-height: 430px) { 
     body > * { scale: 0.7 } 
-    .options { translate: 259px 2px !important;} 
-}
+    /* .options { translate: 259px 2px !important;} */
+} */
 .options {
     position: relative;
     width: 200px;
@@ -48,19 +48,15 @@ body {
 .options {
     background: none;
     height: fit-content;
-    position: absolute;
+    /* position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0%;
+    bottom: 0%; */
     margin: auto;
-    translate: 259px 12px;
-    transform-origin: -157px 107%;
+    /* translate: 259px 12px;
+    transform-origin: -157px 107%; */
     rotate: -100deg;
-}
-@keyframes rotateC {
-    0% {rotate: 0deg;}
-    100% {rotate: 360deg;}
 }
 @keyframes rotateC {
     0% {rotate: 0deg;}
@@ -140,3 +136,4 @@ body {
 
 
 
+}

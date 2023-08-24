@@ -1,0 +1,17 @@
+/* CSS HEX */
+:root {
+--ultra-violet: #5f4d93;
+--ultra-violet-2: #6e5291;
+--pomp-and-power: #7c568f;
+--pomp-and-power-2: #8b5b8d;
+--chinese-violet: #9a5f8b;
+--mulberry: #a8648a;
+--mulberry-2: #b76888;
+--blush: #c66d86;
+--blush-2: #d47184;
+--light-coral: #e37682;
+}
+
+/* element {
+    background-color: var(--main-bg-color);
+  } */
