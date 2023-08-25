@@ -41,7 +41,7 @@
 }
 .option-wrapper{
     position: relative;
-    left: 1em;
+    /* left: 1em; */
     top:13em;
     z-index: 1;
 }
@@ -88,6 +88,31 @@
     font-weight: 600;
 }
 
+.wrapper {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    z-index: 0;
+    margin-top: 5em;
+    margin-bottom: 7em;
+}
+
+.wrapper .tech-illustration img{
+    position: relative;
+    width: 14em;
+    display:flex;
+    margin:auto;
+    
+}
+
+/* 
 .options > div:nth-child(1) {  animation-delay:  calc(var(--_speed) * -1s); }
 .options > div:nth-child(2) {  animation-delay: calc(var(--_speed) *  -2s); }
 .options > div:nth-child(3) {  animation-delay: calc(var(--_speed) *  -3s); }
@@ -122,30 +147,5 @@
 .options > div:nth-child(32) { animation-delay: calc(var(--_speed) * -32s); }
 .options > div:nth-child(33) { animation-delay: calc(var(--_speed) * -33s); }
 .options > div:nth-child(34) { animation-delay: calc(var(--_speed) * -34s); }
-.options > div:nth-child(35) { animation-delay: calc(var(--_speed) * -35s); }
-
-.wrapper {
-    position: relative;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    
-    -webkit-user-select: none;
-    -ms-user-select: none; 
-    user-select: none;
-    z-index: 0;
-    margin-top: 7em;
-}
-
-.wrapper .tech-illustration img{
-    position: relative;
-    width: 14em;
-    display:flex;
-    margin:auto;
-    
-}
-
-
+.options > div:nth-child(35) { animation-delay: calc(var(--_speed) * -35s); } */
 
