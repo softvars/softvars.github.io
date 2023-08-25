@@ -14,11 +14,14 @@ body {
     font-family: Poppins;
     background: #cebca6;
 } */
-/* @media screen and (max-height: 500px) { body > * { scale: 0.8 };}
+@media screen and (max-height: 500px) { body > * { scale: 0.8 };}
 @media screen and (max-height: 430px) { 
     body > * { scale: 0.7 } 
-    /* .options { translate: 259px 2px !important;} */
-} */
+    /* .options {
+        transform: translate(259px, 2px) !important;
+      }
+       */
+}
 .options {
     position: relative;
     width: 200px;
@@ -58,6 +61,7 @@ body {
     transform-origin: -157px 107%; */
     rotate: -100deg;
 }
+
 @keyframes rotateC {
     0% {rotate: 0deg;}
     100% {rotate: 360deg;}

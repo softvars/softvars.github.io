@@ -1,25 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* *{
-    box-sizing: border-box;
-}
-html, body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: Poppins;
-    background: #cebca6;
-} */
-@media screen and (max-height: 500px) { body > * { scale: 0.8 };}
-@media screen and (max-height: 430px) { 
-    body > * { scale: 0.7 } 
-    .options { translate: 259px 2px !important;} 
-}
-.options {
+
+
+/* .options {
     position: relative;
     width: 200px;
     display: flex;
@@ -27,7 +9,43 @@ body {
     text-align: left;
     background: rgba(0,0,0, 0.04);
     padding: 12px;
+    background: none;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0%;
+    margin: auto;
+    translate: 259px 12px;
+    transform-origin: -157px 107%;
+    rotate: -100deg;
+} */
+.options {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 12px;
+    height: fit-content;
+    /* Removed duplicate 'background' property */
+    /* Removed duplicate 'position' property */
+    /* Removed duplicate 'left', 'right', 'top', 'bottom' properties */
+    margin: auto;
+    /* Corrected 'transform' property */
+    transform: translate(259px, 12px) rotate(-100deg);
+    /* Corrected 'transform-origin' property */
+    transform-origin: -157px 107%;
 }
+.option-wrapper{
+    position: relative;
+    left: 1em;
+    top:13em;
+    z-index: 1;
+}
+
 .options > div {
     transition: all 0.1s ease-in-out;
 }
@@ -45,19 +63,7 @@ body {
     animation-play-state: paused;
 }
 
-.options {
-    background: none;
-    height: fit-content;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0%;
-    margin: auto;
-    translate: 259px 12px;
-    transform-origin: -157px 107%;
-    rotate: -100deg;
-}
+  
 @keyframes rotateC {
     0% {rotate: 0deg;}
     100% {rotate: 360deg;}
@@ -73,11 +79,13 @@ body {
     border-radius: 4px;
     background-color: rgba(255,255,255, 0.2);
     transform-origin: -145px 50%;
-    padding: 4px 12px 1px 22px;
+    padding: 4px 12px 1px 0px;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     animation: rotateC calc(var(--_speed) * 36s) linear infinite;
+    --_speed: 4;
+    font-weight: 600;
 }
 
 .options > div:nth-child(1) {  animation-delay:  calc(var(--_speed) * -1s); }
@@ -127,12 +135,13 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none; 
     user-select: none;
-  /* left: 55%; */
+    z-index: 0;
+    margin-top: 7em;
 }
 
 .wrapper .tech-illustration img{
     position: relative;
-    width: 20em;
+    width: 14em;
     display:flex;
     margin:auto;
     
