@@ -3,12 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
   
     subHeadings.forEach((heading) => {
       heading.addEventListener("click", () => {
-        console.log("Clicked")
-        
-        //const servicesList = document.querySelectorAll(".services-list .services");
-        //servicesList.classList.toggle("show");
+        console.log("Clicked");
         const services = heading.nextElementSibling;
-        services.classList.toggle("show");
+        var isOpen=services.classList.contains('show');
+
+        const servicesList = document.querySelectorAll(".services-list .services");
+        servicesList.forEach((services) =>{
+          services.classList.remove("show");
+        })
+
+        // servicesList.classList.remove("show");
+        services.classList.toggle("show", !isOpen) ;
       });
     });
   });
