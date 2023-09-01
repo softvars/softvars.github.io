@@ -1,3 +1,15 @@
+
+/* Your CSS */
+.services-background {
+  background-image: url('./../../images/tech company-amico (1).svg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-repeat: no-repeat;
+  
+  background-size: 34% auto;
+ 
+  background-position: top 85% right; /* This will position the image to the center horizontally and to the right vertically */
+  /* Add other styles as needed */
+   /* Set the desired height for your div */
+}
 .container {
     width: 100%;
     max-width: 600px;
@@ -7,6 +19,7 @@
   .sub-heading {
     font-weight: bold;
     cursor: pointer;
+    font-size: x-large;
   }
   
   .services {
@@ -20,4 +33,7 @@
   
   .show {
     display: block;
+  }
+  .contact-illustration img {
+    width: 50%;
   }
