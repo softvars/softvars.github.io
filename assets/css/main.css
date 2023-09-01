@@ -101,7 +101,7 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url(images/overlay.png), linear-gradient(74deg,#7295bf  30%, #1a142f 70%)
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -119,7 +119,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 500;
 		line-height: 1.65;
 	}
 
