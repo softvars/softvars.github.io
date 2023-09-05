@@ -1,15 +1,15 @@
 /* CSS HEX */
+/* https://coolors.co/gradient-palette/7295bf-1a142f?number=7 */
 :root {
---ultra-violet: #5f4d93;
---ultra-violet-2: #6e5291;
---pomp-and-power: #7c568f;
---pomp-and-power-2: #8b5b8d;
---chinese-violet: #9a5f8b;
---mulberry: #a8648a;
---mulberry-2: #b76888;
---blush: #c66d86;
---blush-2: #d47184;
---light-coral: #e37682;
+  
+  --lightest-secondary: #7295BFff;
+  --light-secondary: #6380A7ff;
+  --middle-scondary: #556A8Fff;
+  --dark-secondary: #465577ff;
+  --lightest-primary: #373F5Fff;
+  --light-primary: #292A47ff;
+  --dark-primary: #1A142Fff;
+  
 }
 
 /* element {
