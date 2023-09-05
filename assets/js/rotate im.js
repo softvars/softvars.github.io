@@ -7,7 +7,7 @@ function formatOption(option) {
 }
 
 options.forEach((option) => {
-    option.addEventListener("click", function() {
+    option.addEventListener("click", function () {
         options.forEach((opt) => {
             cup.classList.remove(formatOption(opt.textContent));
         });
@@ -16,9 +16,19 @@ options.forEach((option) => {
     });
 });
 
+
+
+
 const colorVariables = [
-    '--ultra-violet', '--ultra-violet-2', '--pomp-and-power', '--pomp-and-power-2',
-    '--chinese-violet', '--mulberry', '--mulberry-2', '--blush', '--blush-2', '--light-coral'
+    "--lightest-secondary",
+    "--light-secondary",
+    "--middle-secondary",
+    "--dark-secondary",
+    "--lightest-primary",
+    "--light-primary",
+    "--dark-primary"
+
+
 ];
 
 const divElements = document.querySelectorAll('.options > div');
