@@ -2275,11 +2275,11 @@ input, select, textarea {
 
 			.icon.alt:before {
 				display: block;
-				font-size: 1.25em;
-				width: 2em;
-				height: 2em;
+				font-size: 2.25em;
+				width: 1.2em;
+				height: 1.2em;
 				text-align: center;
-				line-height: 2em;
+				line-height: 1.2em;
 			}
 
 		.icon.style1 {
@@ -3088,6 +3088,10 @@ input, select, textarea {
 
 			#header.alt h1 {
 				font-size: 3.25em;
+				font-family: 'League Spartan', sans-serif;
+			}
+			.logo-name span {
+				 color:#00B6B6
 			}
 
 			#header.alt > * {
@@ -3576,6 +3580,8 @@ input, select, textarea {
 
 		#main .spotlight .image {
 			border-color: #dddddd;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		#main > .main {
@@ -3630,7 +3636,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
 			#main > .main {
 				padding: 3em 2em 1em 2em ;
 			}

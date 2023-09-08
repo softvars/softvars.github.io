@@ -65,7 +65,16 @@
       .contact_us_info a {
             font-size: 1.5em;
             font-weight: bold;
-  color: #465577ff;
-
+            color: #465577ff;
+            /* line-height: 2em; */
       }
-      
+
+      .contact_us_info dd {
+        margin-top: 1.2em;
+      }
+      @media screen and (max-width: 736px) {
+        .flex-item {
+          width: 89%;
+          flex: none;
+        }
+      }
