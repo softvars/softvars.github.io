@@ -49,13 +49,13 @@
         display: flex;
         flex-wrap: wrap-reverse; /* Wrap items to new row when there's not enough space */
         gap: 10px; /* Gap between flex items */
-        justify-content: center;
+        justify-content:space-evenly;
       }
       
       .flex-item {
-        flex: 1; /* Allow items to grow and shrink equally */
-        padding: 20px;
-        text-align: center;
+        /* flex: 1; Allow items to grow and shrink equally */
+        /* padding: 20px;
+        text-align: center; */
 
         width: calc(33.33% - 10px); /* Adjust width based on the number of columns */
         /* You can also use percentages for width */
@@ -74,17 +74,14 @@
         margin-top: 1.2em;
       }
       #technologies{
-        min-height: 42em;
+        min-height: 39em;
       }
       @media screen and (max-width: 736px) {
         .flex-item {
           width: 89%;
           flex: none;
         }
-          #technologies{
-            min-height: 40em;
-          
-        }
+         
       }
 
      
