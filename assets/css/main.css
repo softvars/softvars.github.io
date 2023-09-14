@@ -2249,10 +2249,10 @@ input, select, textarea {
 
 		.icon.major {
 			border: solid 1px;
-			display: inline-block;
+			/* display: inline-block; */
 			border-radius: 100%;
 			padding: 0.65em;
-			margin: 0 0 1em 0;
+			/* margin: 0 0 1em 0; */
 			cursor: default;
 		}
 
@@ -2320,10 +2320,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.icon.major {
+			/* .icon.major {
 				margin: 0 0 1.5em 0;
 				padding: 0.35em;
-			}
+			} */
 
 				.icon.major:before {
 					font-size: 1rem;
@@ -3667,7 +3667,7 @@ input, select, textarea {
 			}
 
 				#main > .main {
-					padding: 2.5em 1em 0.5em 1em ;
+					padding: 2.5em 1em 0.em 1em ;
 				}
 
 					#main > .main > .image.main:first-child {
@@ -3727,6 +3727,7 @@ input, select, textarea {
 				display: block;
 				margin: 0 0 3em 0;
 				width: 100%;
+				text-align: center;
 			}
 
 				#footer > * {

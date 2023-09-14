@@ -148,4 +148,21 @@
 .options > div:nth-child(33) { animation-delay: calc(var(--_speed) * -33s); }
 .options > div:nth-child(34) { animation-delay: calc(var(--_speed) * -34s); }
 .options > div:nth-child(35) { animation-delay: calc(var(--_speed) * -35s); } */
+@media screen and (max-width: 590px) {
+    .options > div {
+    transform-origin: -136px 50%;
+    }
+    }
+@media screen and (max-width: 375px) {
 
+.options > div {
+transform-origin: -77px 89%;
+}
+.wrapper .tech-illustration img {
+margin-top: -1.9em;
+width : 7em;
+}
+.option-wrapper{
+    top: 14em;
+}
+}

@@ -83,5 +83,16 @@
         }
          
       }
+      @media screen and (max-width: 375px) {
+      #technologies {
+        min-height: 31em;
 
-     
+    }
+  }
+
+   .features-heading{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
