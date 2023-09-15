@@ -188,7 +188,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.2em 0;
 		letter-spacing: -0.025em;
 	}
 
@@ -2249,10 +2249,10 @@ input, select, textarea {
 
 		.icon.major {
 			border: solid 1px;
-			display: inline-block;
+			/* display: inline-block; */
 			border-radius: 100%;
 			padding: 0.65em;
-			margin: 0 0 2em 0;
+			/* margin: 0 0 1em 0; */
 			cursor: default;
 		}
 
@@ -2305,7 +2305,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
-				font-size: 5.5rem;
+				font-size: 2.5rem;
 			}
 
 		}
@@ -2313,20 +2313,20 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.icon.major:before {
-				font-size: 4.75rem;
+				font-size: 1.75rem;
 			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
-			.icon.major {
+			/* .icon.major {
 				margin: 0 0 1.5em 0;
 				padding: 0.35em;
-			}
+			} */
 
 				.icon.major:before {
-					font-size: 3.5rem;
+					font-size: 1rem;
 				}
 
 		}
@@ -2457,9 +2457,9 @@ input, select, textarea {
 			margin: 0 0 1em 0;
 		}
 
-		dl dd {
+		/* dl dd {
 			margin-left: 2em;
-		}
+		} */
 
 		dl.alt dt {
 			display: block;
@@ -3517,13 +3517,13 @@ input, select, textarea {
 			color: rgba(99, 99, 99, 0.25) !important;
 		}
 
-		#main .icon.major {
+		/* #main .icon.major {
 			border-color: #dddddd;
-		}
+		} */
 
-			#main .icon.major:before {
+			/* #main .icon.major:before {
 				border-color: #dddddd;
-			}
+			} */
 
 		#main .icon.alt {
 			border-color: #dddddd;
@@ -3585,7 +3585,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 2em 2em 1em 2em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3667,7 +3667,7 @@ input, select, textarea {
 			}
 
 				#main > .main {
-					padding: 2.5em 1em 0.5em 1em ;
+					padding: 2.5em 1em 0.em 1em ;
 				}
 
 					#main > .main > .image.main:first-child {
@@ -3727,6 +3727,7 @@ input, select, textarea {
 				display: block;
 				margin: 0 0 3em 0;
 				width: 100%;
+				text-align: center;
 			}
 
 				#footer > * {
@@ -3736,7 +3737,7 @@ input, select, textarea {
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: center;
 				}
 
 		}
