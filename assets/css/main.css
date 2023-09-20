@@ -3453,10 +3453,12 @@ body.is-preload #header.alt .logo {
 }
 
 #nav ul li a.active {
-	background-color: #6380A7ff;
+	/* background-color: #6380A7ff; */
 	box-shadow: none;
-	color: white;
+	/* color: white; */
 	font-weight: bold;
+	border-bottom: 4px solid #6380a7ff;
+    border-radius: 0px;
 }
 
 #nav.alt {
