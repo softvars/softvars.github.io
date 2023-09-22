@@ -2579,7 +2579,10 @@ ul.alt li:first-child {
 }
 
 dl {
-	margin: 0 0 2em 0;
+	margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 56%;
 }
 
 dl dt {
@@ -3894,7 +3897,7 @@ body.is-preload #header.alt .logo {
 
 
 	#footer {
-		padding: 4em 4em 2em 4em;
+		padding: 4em 2em 2em 2em;
 	}
 
 
