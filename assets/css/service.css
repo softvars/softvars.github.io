@@ -82,7 +82,7 @@
           width: 89%;
           flex: none;
         }
-         
+      
       }
       @media screen and (max-width: 375px) {
       #technologies {
@@ -140,7 +140,8 @@ input:not(:placeholder-shown) {
 
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box input:not(:placeholder-shown) ~ span,
-.contact-form .input-box textarea:focus ~ span{
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:not(:placeholder-shown) ~ span{
   color: #7295BFff;
   font-size: 12px;
   transform: translateY(-20px);
@@ -163,6 +164,9 @@ input:not(:placeholder-shown) {
 {
   background: #FFF;
   color: #00bcd4;
+}
+#contact_us h2 {
+  margin-bottom: 1em;
 }
 
 @media (max-width: 991px) {

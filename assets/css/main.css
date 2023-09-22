@@ -276,7 +276,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 0 0;
 }
 
 p.content {
@@ -2765,11 +2765,12 @@ article.special {
 }
 
 header.major {
-	margin-bottom: 3em;
+	margin-bottom: 0em;
 }
 
 header.major h2 {
 	font-size: 2em;
+	font-weight: bold;
 }
 
 header.major h2:after {
@@ -3229,10 +3230,13 @@ table.alt tbody tr td {
 #header.alt h1 {
 	font-size: 7.25em;
 	font-family: 'League Spartan', sans-serif;
+	letter-spacing: 2px;
 }
 
+
 .logo-name span {
-	color: #00B6B6
+	color: #00B6B6;
+	margin-right: -8px;
 }
 
 #header.alt>* {
@@ -3780,7 +3784,7 @@ body.is-preload #header.alt .logo {
 
 
 	#main>.main {
-		padding: 4em 4em 2em 4em;
+		padding: 1em 4em 0em 4em;
 	}
 
 	#main>.main>.image.main:first-child {
@@ -3864,15 +3868,21 @@ body.is-preload #header.alt .logo {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 5em 5em 3em 5em;
-	width: calc(100% + 2em);
-	margin: 0 0 3em -2em;
+	width: calc(100%);
+    margin: 1em 0em 1em 0em;
 }
 
-#footer>* {
+/* #footer>* {
 	width: calc(50% - 2em);
 	margin-left: 2em;
+} */
+.about-us {
+    width: calc(43%);
 }
-
+.social-media {
+	width: calc(57% - 2em);
+	margin-left: 2em;
+}
 #footer .copyright {
 	width: 100%;
 	margin: 2.5em 0 2em 0;

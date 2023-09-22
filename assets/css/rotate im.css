@@ -39,6 +39,7 @@
     /* Corrected 'transform-origin' property */
     transform-origin: -157px 107%;
 }
+
 .option-wrapper{
     position: relative;
     /* left: 1em; */
@@ -166,3 +167,12 @@ width : 7em;
     top: 14em;
 }
 }
+@media screen and (max-width: 736px) {
+    .options {
+        transform-origin: -145px 193%;
+        }
+        .wrapper{
+            margin-top: 9em;
+    
+        }
+    }
