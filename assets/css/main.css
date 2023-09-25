@@ -2581,8 +2581,8 @@ ul.alt li:first-child {
 dl {
 	margin-bottom: 2em;
     margin-left: auto;
-    margin-right: auto;
-    width: 56%;
+    /* margin-right: auto; */
+    width: 63%;
 }
 
 dl dt {
@@ -2749,6 +2749,7 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
+	margin-left: 1.7em;
 }
 
 ul.icons li {
@@ -3886,6 +3887,12 @@ body.is-preload #header.alt .logo {
 	width: calc(57% - 2em);
 	margin-left: 2em;
 }
+.social-media h2 {
+	margin-left: auto;
+    /* margin-right: auto; */
+    width: 63%;
+}
+
 #footer .copyright {
 	width: 100%;
 	margin: 2.5em 0 2em 0;
