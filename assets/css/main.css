@@ -2795,6 +2795,7 @@ article.special header.major h2:after {
 header.major p {
 	font-size: 1.25em;
 	letter-spacing: -0.025em;
+	text-align: left;
 }
 
 header.major.special {
