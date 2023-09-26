@@ -1,0 +1,33 @@
+{
+  "name": "softvars.com",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Website for traafix",
+  "private": true,
+  "keywords": [
+    "softvars.com",
+    "softvars website",
+    "softvarsity",
+    "softvars"
+  ],
+  "license": "",
+  "author": "Software Development Team, Softvars",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server .",
+    "deploy": "node _scripts/deploy/upload.js"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "ftp": "^0.3.10",
+    "request": "^2.88.2",
+    "vite": "^4.4.2"
+  }
+}

@@ -3153,7 +3153,11 @@ table.alt tbody tr td {
 	width: 20em;
 	opacity: 0.85;
 }
+@media screen and (min-width: 981px) {
 
+.spotlight h2 {
+	margin-left: 67%;
+}}
 @media screen and (max-width: 980px) {
 
 	.spotlight {
@@ -3941,6 +3945,7 @@ body.is-preload #header.alt .logo {
 
 
 }
+
 
 @media screen and (max-width: 736px) {
 
