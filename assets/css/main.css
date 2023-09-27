@@ -276,7 +276,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 0 0;
 }
 
 p.content {
@@ -2579,7 +2579,10 @@ ul.alt li:first-child {
 }
 
 dl {
-	margin: 0 0 2em 0;
+	margin-bottom: 2em;
+    margin-left: auto;
+    /* margin-right: auto; */
+    width: 63%;
 }
 
 dl dt {
@@ -2746,6 +2749,7 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
+	margin-left: 1.7em;
 }
 
 ul.icons li {
@@ -2765,11 +2769,12 @@ article.special {
 }
 
 header.major {
-	margin-bottom: 3em;
+	margin-bottom: 0em;
 }
 
 header.major h2 {
 	font-size: 2em;
+	font-weight: bold;
 }
 
 header.major h2:after {
@@ -2790,6 +2795,7 @@ article.special header.major h2:after {
 header.major p {
 	font-size: 1.25em;
 	letter-spacing: -0.025em;
+	text-align: left;
 }
 
 header.major.special {
@@ -3147,7 +3153,11 @@ table.alt tbody tr td {
 	width: 20em;
 	opacity: 0.85;
 }
+@media screen and (min-width: 981px) {
 
+.spotlight h2 {
+	margin-left: 67%;
+}}
 @media screen and (max-width: 980px) {
 
 	.spotlight {
@@ -3229,10 +3239,13 @@ table.alt tbody tr td {
 #header.alt h1 {
 	font-size: 7.25em;
 	font-family: 'League Spartan', sans-serif;
+	letter-spacing: 2px;
 }
 
+
 .logo-name span {
-	color: #00B6B6
+	color: #00B6B6;
+	margin-right: -8px;
 }
 
 #header.alt>* {
@@ -3780,7 +3793,7 @@ body.is-preload #header.alt .logo {
 
 
 	#main>.main {
-		padding: 4em 4em 2em 4em;
+		padding: 1em 4em 0em 4em;
 	}
 
 	#main>.main>.image.main:first-child {
@@ -3864,13 +3877,25 @@ body.is-preload #header.alt .logo {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 5em 5em 3em 5em;
-	width: calc(100% + 2em);
-	margin: 0 0 3em -2em;
+	width: calc(100%);
+    margin: 1em 0em 1em 0em;
 }
 
-#footer>* {
+/* #footer>* {
 	width: calc(50% - 2em);
 	margin-left: 2em;
+} */
+.about-us {
+    width: calc(43%);
+}
+.social-media {
+	width: calc(57% - 2em);
+	margin-left: 2em;
+}
+.social-media h2 {
+	margin-left: auto;
+    /* margin-right: auto; */
+    width: 63%;
 }
 
 #footer .copyright {
@@ -3884,7 +3909,7 @@ body.is-preload #header.alt .logo {
 
 
 	#footer {
-		padding: 4em 4em 2em 4em;
+		padding: 4em 2em 2em 2em;
 	}
 
 
@@ -3920,6 +3945,7 @@ body.is-preload #header.alt .logo {
 
 
 }
+
 
 @media screen and (max-width: 736px) {
 
