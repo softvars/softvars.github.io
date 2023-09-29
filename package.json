@@ -19,8 +19,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server .",
-    "deploy": "node _scripts/deploy/upload.js"
+    "server": "http-server ."
   },
   "dependencies": {
     "jquery": "^3.6.0"
