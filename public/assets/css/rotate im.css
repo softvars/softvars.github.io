@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* .options {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: rgba(0,0,0, 0.04);
+    padding: 12px;
+    background: none;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0%;
+    margin: auto;
+    translate: 259px 12px;
+    transform-origin: -157px 107%;
+    rotate: -100deg;
+} */
+.options {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* background: rgba(0, 0, 0, 0.04); */
+    padding: 12px;
+    height: fit-content;
+    /* Removed duplicate 'background' property */
+    /* Removed duplicate 'position' property */
+    /* Removed duplicate 'left', 'right', 'top', 'bottom' properties */
+    margin: auto;
+    /* Corrected 'transform' property */
+    transform: translate(259px, 12px) rotate(-100deg);
+    /* Corrected 'transform-origin' property */
+    transform-origin: -147px 158%;
+}
+
+.option-wrapper{
+    position: relative;
+    /* left: 1em; */
+    top:13em;
+    z-index: 1;
+}
+
+.options > div {
+    transition: all 0.1s ease-in-out;
+}
+.options > div:hover {
+    background: rgba(255,255,255, 1);
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 
+    0 0 2px 0px rgba(0,0,0,0.2),
+    0 0 3px 2px rgba(255, 255, 255, 0.1),
+    0 0 3px 0 rgba(0,0,0, 0.1);
+    color: #462814be;
+}
+.options:hover > * {
+    animation-play-state: paused;
+}
+
+  
+@keyframes rotateC {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+@keyframes rotateC {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+.options > div {
+    --_speed: 4;
+    color: black;
+    position: absolute;
+    border-radius: 4px;
+    background-color: rgba(255,255,255, 0.2);
+    transform-origin: -145px 50%;
+    padding: 4px 12px 1px 0px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    animation: rotateC calc(var(--_speed) * 36s) linear infinite;
+    --_speed: 4;
+    font-weight: 600;
+}
+
+.wrapper {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    z-index: 0;
+    margin-top: 8em;
+  
+}
+
+.wrapper .tech-illustration img{
+    position: relative;
+    width: 11em;
+    display:flex;
+    margin:auto;
+    
+}
+
+/* 
+.options > div:nth-child(1) {  animation-delay:  calc(var(--_speed) * -1s); }
+.options > div:nth-child(2) {  animation-delay: calc(var(--_speed) *  -2s); }
+.options > div:nth-child(3) {  animation-delay: calc(var(--_speed) *  -3s); }
+.options > div:nth-child(4) {  animation-delay: calc(var(--_speed) *  -4s); }
+.options > div:nth-child(5) {  animation-delay: calc(var(--_speed) *  -5s); }
+.options > div:nth-child(6) {  animation-delay: calc(var(--_speed) *  -6s); }
+.options > div:nth-child(7) {  animation-delay: calc(var(--_speed) *  -7s); }
+.options > div:nth-child(8) {  animation-delay: calc(var(--_speed) *  -8s); }
+.options > div:nth-child(9) {  animation-delay: calc(var(--_speed) *  -9s); }
+.options > div:nth-child(10) { animation-delay: calc(var(--_speed) * -10s); }
+.options > div:nth-child(11) { animation-delay: calc(var(--_speed) * -11s); }
+.options > div:nth-child(12) { animation-delay: calc(var(--_speed) * -12s); }
+.options > div:nth-child(13) { animation-delay: calc(var(--_speed) * -13s); }
+.options > div:nth-child(14) { animation-delay: calc(var(--_speed) * -14s); }
+.options > div:nth-child(15) { animation-delay: calc(var(--_speed) * -15s); }
+.options > div:nth-child(16) { animation-delay: calc(var(--_speed) * -16s); }
+.options > div:nth-child(17) { animation-delay: calc(var(--_speed) * -17s); }
+.options > div:nth-child(18) { animation-delay: calc(var(--_speed) * -18s); }
+.options > div:nth-child(19) { animation-delay: calc(var(--_speed) * -19s); }
+.options > div:nth-child(20) { animation-delay: calc(var(--_speed) * -20s); }
+.options > div:nth-child(21) { animation-delay: calc(var(--_speed) * -21s); }
+.options > div:nth-child(22) { animation-delay: calc(var(--_speed) * -22s); }
+.options > div:nth-child(23) { animation-delay: calc(var(--_speed) * -23s); }
+.options > div:nth-child(24) { animation-delay: calc(var(--_speed) * -24s); }
+.options > div:nth-child(25) { animation-delay: calc(var(--_speed) * -25s); }
+.options > div:nth-child(26) { animation-delay: calc(var(--_speed) * -26s); }
+.options > div:nth-child(27) { animation-delay: calc(var(--_speed) * -27s); }
+.options > div:nth-child(28) { animation-delay: calc(var(--_speed) * -28s); }
+.options > div:nth-child(29) { animation-delay: calc(var(--_speed) * -29s); }
+.options > div:nth-child(30) { animation-delay: calc(var(--_speed) * -30s); }
+.options > div:nth-child(31) { animation-delay: calc(var(--_speed) * -31s); }
+.options > div:nth-child(32) { animation-delay: calc(var(--_speed) * -32s); }
+.options > div:nth-child(33) { animation-delay: calc(var(--_speed) * -33s); }
+.options > div:nth-child(34) { animation-delay: calc(var(--_speed) * -34s); }
+.options > div:nth-child(35) { animation-delay: calc(var(--_speed) * -35s); } */
+
+@media screen and (max-width: 736px) {
+    .options {
+        transform-origin: -141px 193%;
+        }
+        .wrapper{
+            margin-top: 9em;
+    
+        }
+    }
+@media screen and (max-width: 590px) {
+    .options > div {
+    transform-origin: -136px 50%;
+    }
+    }
+    @media screen and (max-width: 500px) {
+        .options > div {
+        transform-origin: -99px 89%;
+        }
+        .wrapper{
+            margin-top: 9em;
+    
+        }
+        .wrapper .tech-illustration img {
+            margin-top: -1.1em;
+            width : 8em;
+            }
+        }
+@media screen and (max-width: 375px) {
+
+.options > div {
+transform-origin: -77px 89%;
+}
+.wrapper .tech-illustration img {
+margin-top: -2.1em;
+}
+.option-wrapper{
+    top: 14em;
+}
+}

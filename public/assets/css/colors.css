@@ -1,0 +1,17 @@
+/* CSS HEX */
+/* https://coolors.co/gradient-palette/7295bf-1a142f?number=7 */
+:root {
+  
+  --lightest-secondary: #7295BFff;
+  --light-secondary: #6380A7ff;
+  --middle-scondary: #556A8Fff;
+  --dark-secondary: #465577ff;
+  --lightest-primary: #373F5Fff;
+  --light-primary: #292A47ff;
+  --dark-primary: #1A142Fff;
+  
+}
+
+/* element {
+    background-color: var(--main-bg-color);
+  } */

@@ -1,0 +1,177 @@
+
+/* Your CSS */
+.services-background {
+  background-image: url('./../../images/tech company-amico (1).svg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-repeat: no-repeat;
+  
+  background-size: 34% auto;
+ 
+  background-position: top 85% right; /* This will position the image to the center horizontally and to the right vertically */
+  /* Add other styles as needed */
+   /* Set the desired height for your div */
+}
+.container {
+    width: 100%;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+  }
+  
+  .sub-heading {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: x-large;
+  }
+  
+  .services {
+    display: none;
+    margin-top: 5px;
+  }
+  
+  .service {
+    margin-top: 5px;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap-reverse; /* Wrap items to new row when there's not enough space */
+        gap: 10px; /* Gap between flex items */
+        justify-content:space-evenly;
+      }
+      
+      .flex-item {
+        /* flex: 1; Allow items to grow and shrink equally */
+        /* padding: 20px;
+        text-align: center; */
+
+        width: calc(33.33% - 10px); /* Adjust width based on the number of columns */
+        /* You can also use percentages for width */
+        display: flex; /* Nested flex container */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Align content vertically in the middle */
+      }
+      /* .contact_us_info a {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #465577ff;
+            line-height: 2em;
+      }
+
+      .contact_us_info dd {
+        margin-top: 1.2em;
+        display: inline-block
+      } */
+      #technologies{
+        min-height: 39em;
+      }
+      @media screen and (max-width: 736px) {
+        .flex-item {
+          width: 89%;
+          flex: none;
+        }
+
+  .contact-illustration  {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-illustration img {
+    width: calc(50% - 2em);
+  }
+      
+      }
+      @media screen and (max-width: 375px) {
+      #technologies {
+        min-height: 31em;
+
+    }
+  }
+
+   .features-heading{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+.contact-form {
+  background-color: #fff;
+  /* padding: 40px;
+  width: 45%; */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #9e97b6;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  top: 0;
+}
+input:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:not(:placeholder-shown) ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:not(:placeholder-shown) ~ span{
+  color: #7295BFff;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background: #00bcd4;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  font-size: 18px;
+  border: 1px solid #00bcd4;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #00bcd4;
+}
+#contact_us h2 {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 991px) {
+ 
+  .contact-form {
+    width: 100%;
+  }
+}
