@@ -191,7 +191,7 @@ html {
 
 body {
 	background-color: #935d8c;
-	background-image: url(images/overlay.png), linear-gradient(74deg, #7295bf 30%, #1a142f 70%)
+	background-image: url(../images/overlay.png), linear-gradient(74deg, #7295bf 30%, #1a142f 70%)
 }
 
 body.is-preload *,
