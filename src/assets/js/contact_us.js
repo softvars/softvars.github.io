@@ -14,6 +14,7 @@ function addNewEnquery(data) {
   // Use the fetch API to make the POST request
   fetch(apiUrl, requestOptions)
     .then((response) => {
+      document.getElementById("contactUSSubmit").disabled = false;
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -23,7 +24,7 @@ function addNewEnquery(data) {
       // Handle the response data here
       console.log("Response data:", data);
       document.getElementById("contact-form").reset();
-      document.getElementById("contactUSSubmit").disabled = false;
+      //document.getElementById("contactUSSubmit").disabled = false;
     })
     .catch((error) => {
       // Handle errors here

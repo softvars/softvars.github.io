@@ -18,13 +18,18 @@
   
   .sub-heading {
     font-weight: bold;
-    cursor: pointer;
     font-size: x-large;
+    user-select: none;
+  }
+  .sub-heading span {
+    cursor: pointer;
   }
   
   .services {
     display: none;
     margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
   
   .service {
@@ -33,6 +38,7 @@
   
   .show {
     display: block;
+    opacity: 1;
   }
 
 
