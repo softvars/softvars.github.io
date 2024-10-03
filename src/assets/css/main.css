@@ -190,7 +190,7 @@ html {
 }
 
 body {
-	background-color: #935d8c;
+	background-color: #00419c;
 	background-image: url(../images/overlay.png), linear-gradient(74deg, #005dda 30%, #00419c 70%)
 }
 
@@ -204,7 +204,7 @@ body.is-preload *:after {
 /* Type */
 
 body {
-	background-color: #935d8c;
+	background-color: #00419c;
 	color: rgba(255, 255, 255, 0.65);
 }
 

@@ -37,13 +37,13 @@
     /* Corrected 'transform' property */
     transform: translate(259px, 12px) rotate(-100deg);
     /* Corrected 'transform-origin' property */
-    transform-origin: -147px 158%;
+    transform-origin: -151px 158%;
 }
 
 .option-wrapper{
     position: relative;
     /* left: 1em; */
-    top:13em;
+    top: 14.8em;
     z-index: 1;
 }
 
@@ -51,13 +51,13 @@
     transition: all 0.1s ease-in-out;
 }
 .options > div:hover {
-    background: rgba(255,255,255, 1);
+    /* background: rgba(255,255,255, 1); */
     cursor: pointer;
-    font-size: 22px;
-    box-shadow: 
+    font-size: 35px;
+    /* box-shadow: 
     0 0 2px 0px rgba(0,0,0,0.2),
     0 0 3px 2px rgba(255, 255, 255, 0.1),
-    0 0 3px 0 rgba(0,0,0, 0.1);
+    0 0 3px 0 rgba(0,0,0, 0.1); */
     color: #462814be;
 }
 .options:hover > * {
@@ -84,8 +84,7 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-    animation: rotateC calc(var(--_speed) * 36s) linear infinite;
-    --_speed: 4;
+    animation: rotateC calc(var(--_speed) * 23s) linear infinite;
     font-weight: 600;
     font-size: 27px;
 }
@@ -102,7 +101,7 @@
     -ms-user-select: none; 
     user-select: none;
     z-index: 0;
-    margin-top: 8em;
+    margin-top: 10em;
   
 }
 
