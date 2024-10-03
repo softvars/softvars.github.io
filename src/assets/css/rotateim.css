@@ -87,6 +87,7 @@
     animation: rotateC calc(var(--_speed) * 36s) linear infinite;
     --_speed: 4;
     font-weight: 600;
+    font-size: 27px;
 }
 
 .wrapper {

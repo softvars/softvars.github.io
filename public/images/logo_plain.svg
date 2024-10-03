@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="24mm"
-   height="24.000002mm"
-   viewBox="0 0 24 24.000002"
+   width="12.327321mm"
+   height="21.029888mm"
+   viewBox="0 0 12.327321 21.029888"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -42,8 +42,8 @@
      inkscape:export-bgcolor="#ffffff00"><inkscape:grid
        id="grid25"
        units="px"
-       originx="-153.03503"
-       originy="-122.15539"
+       originx="-159.09829"
+       originy="-123.5211"
        spacingx="0.26458333"
        spacingy="0.26458334"
        empcolor="#0099e5"
@@ -55,23 +55,23 @@
        gridanglex="30"
        gridanglez="30"
        visible="false" /><sodipodi:guide
-       position="91.349542,113.78271"
+       position="85.286281,115.14843"
        orientation="0,-1"
        id="guide28"
        inkscape:locked="false" /><sodipodi:guide
-       position="-153.03503,418.38644"
+       position="-159.09829,419.75216"
        orientation="0,793.70079"
        id="guide643"
        inkscape:locked="false" /><sodipodi:guide
-       position="199.38995,304.08644"
+       position="193.32669,305.45216"
        orientation="1122.5197,0"
        id="guide644"
        inkscape:locked="false" /><sodipodi:guide
-       position="56.964964,121.38645"
+       position="50.901703,122.75217"
        orientation="0,-793.70079"
        id="guide645"
        inkscape:locked="false" /><sodipodi:guide
-       position="-153.03503,121.38645"
+       position="-159.09829,122.75217"
        orientation="-1122.5197,0"
        id="guide646"
        inkscape:locked="false" /></sodipodi:namedview><defs
@@ -136,7 +136,7 @@
        y2="124.60509" /></defs><g
      id="g76"
      style="display:inline;fill:url(#linearGradient78);stroke:none"
-     transform="matrix(0.98296201,0,0,0.98296201,-63.20707,-110.09759)"
+     transform="matrix(0.98296201,0,0,0.98296201,-69.270331,-111.46331)"
      inkscape:export-filename="softvars_170.png"
      inkscape:export-xdpi="179.91666"
      inkscape:export-ydpi="179.91666"><rect

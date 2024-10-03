@@ -22,18 +22,6 @@ var onpageload = function () {
       });
     });
 
-    // heading.addEventListener("mouseleave", () => {
-    //   console.log("Clicked");
-    //   const services = heading.parentElement.nextElementSibling;
-
-    //   const servicesList = document.querySelectorAll(
-    //     ".services-list .services"
-    //   );
-    //   servicesList.forEach((services) => {
-    //     services.classList.remove("show");
-    //   });
-    // });
-
     document.querySelector(".services-list").addEventListener("mouseleave", () => {
       const servicesList = document.querySelectorAll(".services-list .services");
       servicesList.forEach((service) => {

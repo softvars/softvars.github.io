@@ -191,7 +191,7 @@ html {
 
 body {
 	background-color: #935d8c;
-	background-image: url(../images/overlay.png), linear-gradient(74deg, #7295bf 30%, #1a142f 70%)
+	background-image: url(../images/overlay.png), linear-gradient(74deg, #005dda 30%, #00419c 70%)
 }
 
 body.is-preload *,
@@ -3237,16 +3237,38 @@ table.alt tbody tr td {
 }
 
 #header.alt h1 {
-	font-size: 7.25em;
+	font-size: 6.25em;
 	font-family: 'League Spartan', sans-serif;
 	letter-spacing: 2px;
 }
 
 
 .logo-name span {
-	color: #00B6B6;
+	/* color: #00B6B6; */
 	margin-right: -8px;
 }
+
+.company_name {
+    font-weight: bold; /* Optional: makes the text bold */
+    color: #ffffff; /* White text color for contrast */
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.7), /* Dark shadow for depth */
+        2px 2px 0 rgba(0, 0, 0, 0.5), /* Slightly larger shadow */
+        3px 3px 5px rgba(0, 0, 0, 0.3); /* Main shadow for smoothness */
+}
+
+.company_tagline {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffffff; /* White text color for contrast */
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.7), /* Dark shadow for depth */
+        2px 2px 0 rgba(0, 0, 0, 0.5), /* Slightly larger shadow */
+        3px 3px 5px rgba(0, 0, 0, 0.3); /* Main shadow for smoothness */
+}
+
 
 #header.alt>* {
 	-moz-transition: opacity 3s ease;
@@ -3276,13 +3298,14 @@ table.alt tbody tr td {
 	width: 6em;
 	display: flex;
 	margin: auto;
+	justify-content: center;
 }
 
 
 #header.alt .logo img {
-	display: block;
-	margin: 0 auto;
 	max-width: 75%;
+	width: 6rem;
+	padding: 10px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3592,7 +3615,7 @@ body.is-preload #header.alt .logo {
 #main input[type="button"].primary,
 #main button.primary,
 #main .button.primary {
-	background-color: #7295BFff;
+	background-color: #00419cff;
 	color: #ffffff !important;
 	box-shadow: none;
 	font-weight: bold;
@@ -3603,7 +3626,7 @@ body.is-preload #header.alt .logo {
 #main input[type="button"].primary:hover,
 #main button.primary:hover,
 #main .button.primary:hover {
-	background-color: #9acff2;
+	background-color: #005ddaff;
 }
 
 #main input[type="submit"].primary:active,
@@ -3611,7 +3634,7 @@ body.is-preload #header.alt .logo {
 #main input[type="button"].primary:active,
 #main button.primary:active,
 #main .button.primary:active {
-	background-color: #7ec3ee;
+	background-color: #005ddaff;
 }
 
 #main input[type="submit"].primary.icon:before,
