@@ -102,11 +102,12 @@
     .options {
         transform-origin: -141px 193%;
     }
-
-    .wrapper {
-        margin-top: 9em;
-
-    }
+    #option-wrapper {
+		top: 15.8em;
+	}
+	.wrapper {
+		margin-top: 11em;
+	}
 }
 
 @media screen and (max-width: 590px) {

@@ -3801,9 +3801,20 @@ body.is-preload #header.alt .logo {
 		padding: 1em 4em 0em 4em;
 	}
 
+	#main>.main#technologies {
+		padding: 1em 4em 11.5em 4em;
+	}
+
 	#main>.main>.image.main:first-child {
 		margin: -4em 0 4em -4em;
 		width: calc(100% + 8em);
+	}
+
+	#option-wrapper {
+		top: 16.8em;
+	}
+	.wrapper {
+		margin-top: 12em;
 	}
 
 }
@@ -3812,6 +3823,11 @@ body.is-preload #header.alt .logo {
 
 	#main>.main {
 		padding: 4em 3em 2em 3em;
+		/* padding: 4em 3em 10em; */
+	}
+
+	#main>.main#technologies {
+		padding: 4em 3em 10em;
 	}
 
 	#main>.main>.image.main:first-child {
@@ -3831,6 +3847,9 @@ body.is-preload #header.alt .logo {
 		width: calc(100% + 4em);
 	}
 
+	#main>.main#technologies {
+		padding: 4em 3em 15em;
+	}
 }
 
 @media screen and (max-width: 480px) {

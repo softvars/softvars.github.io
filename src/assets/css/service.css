@@ -20,16 +20,19 @@
     font-weight: bold;
     font-size: x-large;
     user-select: none;
-  }
-  .sub-heading span {
     cursor: pointer;
   }
   
+  /* .sub-heading span {
+  } */
+  
   .services {
-    display: none;
-    margin-top: 5px;
+    display: block; /* Always keep block for the height transition to work */
+    max-height: 0; /* Start from 0 height */
+    overflow: hidden; /* Hide content until expanded */
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    margin-top: 5px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Animate height and opacity */
   }
   
   .service {
@@ -37,9 +40,10 @@
   }
   
   .show {
-    display: block;
-    opacity: 1;
-  }
+    max-height: 500px; /* Adjust to a value large enough to contain your content */
+    opacity: 1; /* Make the element fully visible */
+    transition-delay: 0.1s; /* Reset delay for showing */
+  } 
 
 
       .flex-container {

@@ -7,8 +7,49 @@ const requestOptions = {
   body: "{}",
 };
 
-function addNewEnquery(data) {
-  //requestOptions.body =  JSON.stringify(data)
+// Limit tracking: Store the last submission time
+let lastSubmissionTime = 0;
+
+// Set a limit: 1 submission per 60 seconds, max 10 submissions per day
+const SUBMISSION_INTERVAL = 60000; // 1 minute
+const MAX_SUBMISSIONS_PER_DAY = 10;
+let submissionCount = 0;
+
+// Simple rate-limiting using localStorage for per-minute and per-day limits
+function isRateLimited() {
+  const currentTime = Date.now();
+  const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+  const dailySubmissionCount = parseInt(localStorage.getItem('dailySubmissionCount')) || 0;
+  const lastSubmissionDay = localStorage.getItem('lastSubmissionDay');
+  const currentDay = new Date().toISOString().split('T')[0]; // Format as YYYY-MM-DD
+  
+  // Check if it's a new day, reset daily submission count
+  if (currentDay !== lastSubmissionDay) {
+    localStorage.setItem('dailySubmissionCount', '0');
+    submissionCount = 0;
+  }
+
+  // Block submission if too frequent or over the daily limit
+  if (dailySubmissionCount >= MAX_SUBMISSIONS_PER_DAY) {
+    alert("Submission limit reached for today.");
+    return true;
+  }
+
+  if (lastSubmissionTime && currentTime - lastSubmissionTime < SUBMISSION_INTERVAL) {
+    alert("Please wait before submitting again.");
+    return true;
+  }
+
+  return false;
+}
+
+function addNewEnquiry(data) {
+  // Handle form submission delay and disable button
+  if (isRateLimited()) {
+    document.getElementById("contactUSSubmit").disabled = false;
+    return;
+  }
+
   requestOptions.body = data;
 
   // Use the fetch API to make the POST request
@@ -21,13 +62,20 @@ function addNewEnquery(data) {
       return response.json();
     })
     .then((data) => {
-      // Handle the response data here
       console.log("Response data:", data);
       document.getElementById("contact-form").reset();
-      //document.getElementById("contactUSSubmit").disabled = false;
+      
+      // Update submission tracking in localStorage
+      const currentTime = Date.now();
+      localStorage.setItem('lastSubmissionTime', currentTime.toString());
+      
+      // Track the current day and submission count
+      const currentDay = new Date().toISOString().split('T')[0];
+      localStorage.setItem('lastSubmissionDay', currentDay);
+      const updatedCount = (parseInt(localStorage.getItem('dailySubmissionCount')) || 0) + 1;
+      localStorage.setItem('dailySubmissionCount', updatedCount.toString());
     })
     .catch((error) => {
-      // Handle errors here
       console.error("Error:", error);
     });
 }
@@ -40,21 +88,18 @@ contactForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission behavior
   document.getElementById("contactUSSubmit").disabled = true;
 
-  // // Get values from the form elements
+  // Get values from the form elements
   const name = document.getElementById("fullName").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  // // Now you can use these values as needed
-  console.log("Full Name:", name);
-  console.log("Email:", email);
-  console.log("Message:", message);
+  // Add form validation if needed here (e.g. email format validation)
 
-  var formData = new FormData();
-  formData.append("name", name); // Replace with the actual name value
-  formData.append("email", email); // Replace with the actual email value
-  formData.append("message", message); // Replace with the actual message value
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("email", email);
+  formData.append("message", message);
 
-  // You can send these values to your API using fetch or perform any other actions.
-  addNewEnquery(formData);
+  // Send the form data
+  addNewEnquiry(formData);
 });

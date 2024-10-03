@@ -1,10 +1,10 @@
 var onpageload = function () {
-  const subHeadings = document.querySelectorAll(".sub-heading span");
+  const subHeadings = document.querySelectorAll(".sub-heading");
 
   subHeadings.forEach((heading) => {
     ["mouseover", "click", "ontouchstart"].forEach(function (evt) {
       heading.addEventListener(evt, () => {
-        const services = heading.parentElement.nextElementSibling;
+        const services = heading.nextElementSibling;
         var isOpen = !(evt == "mouseover");
         if(isOpen) {
           isOpen = services.classList.contains("show");
