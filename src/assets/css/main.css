@@ -2750,7 +2750,7 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
-	margin-left: 1.7em;
+	/* margin-left: 1.7em; */
 }
 
 ul.icons li {
@@ -3156,11 +3156,7 @@ table.alt tbody tr td {
 	width: 20em;
 	opacity: 0.85;
 }
-@media screen and (min-width: 981px) {
 
-.spotlight h2 {
-	margin-left: 67%;
-}}
 @media screen and (max-width: 980px) {
 
 	.spotlight {
@@ -3318,7 +3314,7 @@ table.alt tbody tr td {
 	}
 
 	#header.alt {
-		padding: 6em 4em 3em 4em;
+		padding: 2em 4em 3em 4em;
 	}
 
 }
