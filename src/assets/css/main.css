@@ -3239,7 +3239,7 @@ table.alt tbody tr td {
 }
 
 #header.alt h1 {
-	font-size: 6.25em;
+	font-size: 5em;
 	font-family: 'League Spartan', sans-serif;
 	letter-spacing: 2px;
 }
@@ -3305,7 +3305,7 @@ table.alt tbody tr td {
 
 
 #header.alt .logo img {
-	max-width: 75%;
+	/* max-width: 75%; */
 	width: 6rem;
 	padding: 10px;
 }
@@ -3354,7 +3354,7 @@ table.alt tbody tr td {
 	}
 
 	#header.alt h1 {
-		font-size: 4.5em;
+		font-size: 3.5em;
 	}
 
 }
@@ -3367,6 +3367,10 @@ table.alt tbody tr td {
 
 	#header.alt {
 		padding: 4em 1.5em 1em 1.5em;
+	}
+
+	#header.alt .logo {
+		width: 5rem;
 	}
 
 }
@@ -3811,14 +3815,6 @@ body.is-preload #header.alt .logo {
 		margin: -4em 0 4em -4em;
 		width: calc(100% + 8em);
 	}
-
-	#option-wrapper {
-		top: 16.8em;
-	}
-	.wrapper {
-		margin-top: 12em;
-	}
-
 }
 
 @media screen and (max-width: 980px) {

@@ -11,7 +11,8 @@
     height: fit-content;
     margin: auto;
     transform: translate(259px, 12px) rotate(-100deg);
-    transform-origin: -151px 158%;
+    /* transform-origin: -151px 158%; */
+    transform-origin: -142px 207%;
 }
 
 .option-wrapper {
@@ -26,7 +27,7 @@
 
 .options>div:hover {
     cursor: pointer;
-    font-size: 35px;
+    font-size: 27px;
     color: #462814be;
 }
 
@@ -61,7 +62,7 @@
     position: absolute;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.2);
-    transform-origin: -145px 50%;
+    transform-origin: -125px 50%;
     padding: 4px 12px 1px 0px;
     -webkit-user-select: none;
     /* Safari */
@@ -69,9 +70,9 @@
     /* IE 10 and IE 11 */
     user-select: none;
     /* Standard syntax */
-    animation: rotateC calc(var(--_speed) * 23s) linear infinite;
-    font-weight: 600;
-    font-size: 27px;
+    animation: rotateC calc(var(--_speed) * 12s) linear infinite;
+    /* font-weight: 600; */
+    font-size: 22px;
 }
 
 .wrapper {
@@ -86,7 +87,7 @@
     -ms-user-select: none;
     user-select: none;
     z-index: 0;
-    margin-top: 10em;
+    margin-top: 9.8em;
 
 }
 
@@ -98,31 +99,57 @@
 
 }
 
+
+@media screen and (max-width: 1280px) {
+	.option-wrapper {
+		top: 16.8em;
+	}
+	.wrapper {
+		margin-top: 12em;
+	}
+    .options {
+        transform-origin: -137px 219%;
+    }
+
+}
+
 @media screen and (max-width: 736px) {
     .options {
-        transform-origin: -141px 193%;
+        transform-origin: -121px 269%;
     }
-    #option-wrapper {
+    .options>div {
+        transform-origin: -107px 50%;
+    }
+    .option-wrapper {
 		top: 15.8em;
 	}
 	.wrapper {
-		margin-top: 11em;
+		margin-top: 12.2em;
 	}
 }
 
-@media screen and (max-width: 590px) {
+/* @media screen and (max-width: 590px) {
     .options>div {
         transform-origin: -136px 50%;
     }
-}
+} */
 
 @media screen and (max-width: 500px) {
+    .options {
+        transform-origin: -126px 279%;
+    }
+
     .options>div {
-        transform-origin: -99px 89%;
+        transform-origin: -76px 78%;
+        font-size: 19px;
+    }
+
+    .options>div:hover {
+        font-size: 22px;
     }
 
     .wrapper {
-        margin-top: 9em;
+        margin-top: 12.9em;
 
     }
 
