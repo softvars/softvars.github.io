@@ -93,19 +93,37 @@
 
 .wrapper .tech-illustration img {
     position: relative;
-    width: 11em;
+    width: 10em;
     display: flex;
     margin: auto;
 
 }
 
 
+@media screen and (min-width: 1680px) {
+    #technologies {
+        min-height: 33em;
+    }
+    .option-wrapper {
+        top: 11.8em;
+    }
+    .wrapper {
+        margin-top: 7em;
+	}
+}
+
+@media screen and (max-width: 1679px) {
+    #technologies {
+        min-height: 38.5em;
+    }
+}
+
 @media screen and (max-width: 1280px) {
 	.option-wrapper {
 		top: 16.8em;
 	}
 	.wrapper {
-		margin-top: 12em;
+		margin-top: 13em;
 	}
     .options {
         transform-origin: -137px 219%;
@@ -126,6 +144,9 @@
 	.wrapper {
 		margin-top: 12.2em;
 	}
+    #technologies {
+        min-height: 36.5em;
+    }
 }
 
 /* @media screen and (max-width: 590px) {
