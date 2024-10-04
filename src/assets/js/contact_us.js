@@ -1,5 +1,6 @@
 // Define the URL of your REST API
 const apiUrl = "api/contact_form.php";
+//const apiUrl = "http://localhost:3330/api/contact_form.php";
 
 // Create a request object with the necessary options
 const requestOptions = {
@@ -11,14 +12,14 @@ const requestOptions = {
 let lastSubmissionTime = 0;
 
 // Set a limit: 1 submission per 60 seconds, max 10 submissions per day
-const SUBMISSION_INTERVAL = 60000; // 1 minute
-const MAX_SUBMISSIONS_PER_DAY = 10;
+const SUBMISSION_INTERVAL = 10_000; // 1 minute
+const MAX_SUBMISSIONS_PER_DAY = 15;
 let submissionCount = 0;
 
 // Simple rate-limiting using localStorage for per-minute and per-day limits
 function isRateLimited() {
   const currentTime = Date.now();
-  const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+  const lastSubmissionTime = parseInt(localStorage.getItem('lastSubmissionTime'));
   const dailySubmissionCount = parseInt(localStorage.getItem('dailySubmissionCount')) || 0;
   const lastSubmissionDay = localStorage.getItem('lastSubmissionDay');
   const currentDay = new Date().toISOString().split('T')[0]; // Format as YYYY-MM-DD
@@ -36,7 +37,7 @@ function isRateLimited() {
   }
 
   if (lastSubmissionTime && currentTime - lastSubmissionTime < SUBMISSION_INTERVAL) {
-    alert("Please wait before submitting again.");
+    alert("Please wait 10 seconds before submitting again.");
     return true;
   }
 
@@ -44,6 +45,12 @@ function isRateLimited() {
 }
 
 function addNewEnquiry(data) {
+  const honeypotValue = document.getElementById("nanban").value;
+  if (honeypotValue !== "") {
+    console.log("Honeypot triggered. Possible bot detected. Submission canceled.");
+    return; // Don't process the form if the honeypot field has been filled
+  }
+  
   // Handle form submission delay and disable button
   if (isRateLimited()) {
     document.getElementById("contactUSSubmit").disabled = false;
