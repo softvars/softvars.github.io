@@ -203,3 +203,7 @@ input:not(:placeholder-shown) {
     width: 100%;
   }
 }
+
+.features h3 {
+  font-weight: 500;
+}
