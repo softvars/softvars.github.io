@@ -1,0 +1,21 @@
+.br-50{
+    border-radius: 50px;
+}
+.client-cb{
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-name{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-name-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0rem 3rem 0rem;
+}
