@@ -17,8 +17,33 @@
 
 </head>
 
-<body class="is-preload">
 
+<body class="is-preload">
+	<!-- <script>
+	let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+
+function changeSlide() {
+	console.log("items : ",items)
+    const currentItem = items[currentIndex];
+    currentItem.classList.remove('active');
+    currentItem.classList.add('previous'); // Add 'previous' to slide it out
+
+    // Move to the next slide and loop back if at the end
+    currentIndex = (currentIndex + 1) % items.length;
+    const nextItem = items[currentIndex];
+    nextItem.classList.add('active');
+
+    // Remove the 'previous' class after transition ends for a clean reset
+    setTimeout(() => currentItem.classList.remove('previous'), 1000); // Match CSS transition time
+}
+
+// Change slides every 3 seconds
+setInterval(changeSlide, 3000);
+
+		</script> -->
+	
+	
 	<!-- Wrapper -->
 	<div id="wrapper">
 
@@ -196,20 +221,28 @@
 				<header class="major">
 					<h2>Clients</h2>
 				</header>
-				<div class="client-name-wrapper">
-					<div class="client-name">
+				<div class="carousel">
+					<div class="carousel-item active" id="client1">
 						<div class="br-50 client-cb">
-							<img  src="public/images/logo_cosmotown.jpeg" width="80" height="80"/>
+							<img src="public/images/logo_cosmotown.jpeg" width="100" height="100" alt="Client1"> 
 						</div>
-						<p>Cosmotown</p>
+						<div>
+							<h2 class="fw-bold">Cosmotown</h2>
+							<p>Description for Client1</p>
+						</div>
 					</div>
-					<div class="client-name">
+					<div class="carousel-item" id="client2">
 						<div class="br-50 client-cb">
-							<img   src="public/images/logo_tlh.svg" width="80" height="80"/>
+							<img src="public/images/logo_tlh.svg" width="100" height="100" alt="Client2"> 
 						</div>
-						<p>TLH</p>
+						<div>
+							<h2 class="fw-bold">TLH</h2>
+							<p>Description for Client2</p>
+						</div>
 					</div>
 				</div>
+				
+				  
 			</section>
 			<section id="solutions" class="main special">
 				<header class="major">
@@ -394,7 +427,71 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script type="module" src="/app.js"></script>
+	<!-- <script>
+		document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
 
+    function changeSlide() {
+        const currentItem = items[currentIndex];
+        
+        // Remove active class and set as previous for sliding out
+        currentItem.classList.remove('active');
+        currentItem.classList.add('previous');
+
+        // Update index to the next item
+        currentIndex = (currentIndex + 1) % items.length;
+        
+        // Prepare the next item for entry
+        const nextItem = items[currentIndex];
+        nextItem.classList.add('active');
+        
+        // Reset previous item after transition
+        setTimeout(() => {
+            currentItem.classList.remove('previous');
+            currentItem.style.transform = 'translateX(100%)'; // Reset to the right
+        }, 1000); // Match this delay to the CSS transition duration
+    }
+
+    // Change slide every 3 seconds
+    setInterval(changeSlide, 3000);
+});
+	</script> -->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function changeSlide() {
+        const currentItem = items[currentIndex];
+        currentItem.classList.remove('active');
+        currentItem.classList.add('previous');
+        
+        // Slide the current item out to the left and hide it immediately
+        currentItem.style.transform = 'translateX(-100%)';
+        currentItem.style.opacity = '0'; // Hide the previous item instantly
+
+        // Move to the next item
+        currentIndex = (currentIndex + 1) % items.length;
+
+        // Get the next item and slide it in from the right
+        const nextItem = items[currentIndex];
+        nextItem.classList.add('active');
+        nextItem.style.transform = 'translateX(0)'; // Center the new item
+        nextItem.style.opacity = '1'; // Make it fully visible
+
+        // Delay the reset of the previous item until after the transition
+        setTimeout(() => {
+            currentItem.classList.remove('previous');
+            currentItem.style.transform = 'translateX(100%)'; // Move it back to the right
+        }, 1000); // Matches the CSS transition duration
+    }
+
+    // Start the carousel interval
+    setInterval(changeSlide, 3000);
+});
+
+</script>
 </body>
 
 </html>
