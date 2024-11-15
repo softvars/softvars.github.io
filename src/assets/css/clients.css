@@ -1,9 +1,8 @@
 /* .br-50{
     border-radius: 50px;
 } */
-.client-cb{
- 
-    display: flex;
+.client-logo{
+    display: grid;
     align-items: center;
     justify-content: center;
 }
