@@ -1,14 +1,6 @@
 /* General container styling */
 .profile-card-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 20px;
-    /* background: linear-gradient(to bottom right, #f0f4f8, #d9e8f5);
-    border-radius: 8px;
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   }
   
   /* Profile card styling */
@@ -18,11 +10,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
   }
   
   .profile-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
   
@@ -36,11 +27,10 @@
     height: 120px;
     border-radius: 50%;
     border: 3px solid #0073b1;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
   }
   
   .profile-image-container:hover .profile-image {
-    /* transform: rotate(360deg); */
     box-shadow: 0 0 20px rgba(0, 115, 177, 0.8);
   }
   
@@ -53,6 +43,20 @@
     font-size: 1.2rem;
     margin-bottom: 8px;
     margin-left: 36px;
+  }
+
+  .profile-name a strong{
+    font-weight: 700;
+  }
+
+  .profile-name a {
+    color: #0073b1;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .profile-name a:hover {
+    text-decoration: underline;
   }
   
   .profile-headline {
@@ -74,15 +78,15 @@
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #0073b1;
+    background-color: #00419cff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .profile-view-btn:hover {
-    background-color: #005582;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  #main a.profile-view-btn:hover {
+    color: #fff;
+    background-color: #005ddaff;
   }
   

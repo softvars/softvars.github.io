@@ -16,6 +16,11 @@
     justify-content: space-evenly;
     margin: 1rem 0rem 3rem 0rem;
 }
+
+.client-description strong{ 
+    font-weight: 700;
+}
+
 .fw-bold{
     font-weight: bold;
     
@@ -24,7 +29,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 180px; /* Adjust height as needed */
+    height: 250px; /* Adjust height as needed */
 }
 
 .carousel-item {
@@ -35,9 +40,10 @@
     opacity: 0;
     transform: translateX(100%); /* Start each new item off to the right */
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -58,4 +64,5 @@
 .br-50 {
     border-radius: 50%;
     margin-bottom: 1em;
+    /*margin-right: 1em; */
 }
